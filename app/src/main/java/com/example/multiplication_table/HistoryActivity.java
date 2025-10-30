@@ -22,6 +22,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         listViewHistory = findViewById(R.id.listViewHistory);
         btnBack = findViewById(R.id.btnBack);
+        btnClearAll = findViewById(R.id.btnClearAll);
 
         // Convert Integer list to String for display
         historyDisplay = new ArrayList<>();
