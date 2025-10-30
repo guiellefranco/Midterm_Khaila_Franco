@@ -24,7 +24,7 @@ public class HistoryActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.btnBack);
         btnClearAll = findViewById(R.id.btnClearAll);
 
-        // Convert Integer list to String for display
+        // Convert historyList to an ArrayList of Strings
         historyDisplay = new ArrayList<>();
         for (int n : MainActivity.historyList) {
             historyDisplay.add(String.valueOf(n));

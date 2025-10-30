@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         // Generate table when button clicked
         btnGenerate.setOnClickListener(v -> generateTable());
 
-        // Handle delete item on click
+        // Handle delete on click
         listView.setOnItemClickListener((parent, view, position, id) -> confirmDelete(position));
 
         // Navigate to History screen
@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         int num = Integer.parseInt(numText);
+        // Clear previous table and generate new one
         tableList.clear();
         for (int i = 1; i <= 10; i++) {
             tableList.add(num + " × " + i + " = " + (num * i));
